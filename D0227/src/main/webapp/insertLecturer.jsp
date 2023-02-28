@@ -45,12 +45,12 @@
 						ResultSet rs=null;
 						PreparedStatement pstmt=null;
 						int no=0;
-						String sql="select max(idx) from lecturer0224";
+						String sql="select lect_seq.nextval from dual";
 						try{
 							pstmt=conn.prepareStatement(sql);
 							rs=pstmt.executeQuery();
 							if(rs.next()){
-								no=rs.getInt(1)+1;
+								no=rs.getInt(1);
 							}
 						}catch(Exception e){
 							System.out.println("강사 테이블 조회 실패");

@@ -22,7 +22,7 @@
 	%>
 		<script>
 			alert("강사가 추가되었습니다.");
-			location.href="lecturerSelect.jsp"
+			location.href="selectLecturer.jsp"
 		</script>
 	<%
 		}catch(Exception e){
